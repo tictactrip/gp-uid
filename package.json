@@ -5,9 +5,12 @@
   "author": "Dimitri DO BAIRRO <dimitri.dobairro@tictactrip.eu>",
   "main": "dist/index.js",
   "dependencies": {
+    "ngeohash": "^0.6.3",
+    "stopword": "^0.3.1"
   },
   "devDependencies": {
     "@types/jest": "24.0.15",
+    "@types/ngeohash": "^0.6.2",
     "@types/node": "10.14.12",
     "jest": "24.8.0",
     "prettier": "1.18.2",
