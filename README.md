@@ -8,7 +8,7 @@
 
 ## Description
 
-This repository provides a powerful ground place unique identifier function.
+This repository provides a powerful ground place unique identifier generator.
 
 ## Install
 
