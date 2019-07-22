@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "dependencies": {
     "ngeohash": "0.6.3",
-    "stopword": "0.3.1"
+    "stopword": "^0.3.2"
   },
   "devDependencies": {
     "@types/jest": "24.0.15",

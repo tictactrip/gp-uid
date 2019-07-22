@@ -2393,7 +2393,7 @@ neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha512-iyam8fBuCUpWeKPGpaNMetEocMt364qkCsfL9JuhjXX6dRnguRVOfk2GZaDpPjcOKiiXCPINZC1GczQ7iTq3Zw==
 
-ngeohash@^0.6.3:
+ngeohash@0.6.3:
   version "0.6.3"
   resolved "https://registry.yarnpkg.com/ngeohash/-/ngeohash-0.6.3.tgz#10b1e80be5488262ec95c56cf2dbb6c45fbdf245"
   integrity sha512-kltF0cOxgx1AbmVzKxYZaoB0aj7mOxZeHaerEtQV0YaqnkXNq26WWqMmJ6lTqShYxVRWZ/mwvvTrNeOwdslWiw==
@@ -3208,10 +3208,10 @@ stealthy-require@^1.1.1:
   resolved "https://registry.yarnpkg.com/stealthy-require/-/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-stopword@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/stopword/-/stopword-0.3.1.tgz#af055b1a12ddff5c0b5b9e7a8b28853846f96a8c"
-  integrity sha512-F4eRRIhEW4fgPZisV1tVXcag6g7Px94k7mwDRvCLfFQYa71FYre4nrbzIUKeiFMMNHVCa1l9/w0YJXjp5ZFyeA==
+stopword@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/stopword/-/stopword-0.3.2.tgz#c632246987ac6f41734c18ec101767be9ffd0826"
+  integrity sha512-TN55Gl2rHC0voOFdiC/6ksEJb9i8pNOkKEFMiVvlNhC81CEMRoQqFRxi9F8fKaSauzMatD3wtP0Eb/wzvG6VSA==
 
 string-length@^2.0.0:
   version "2.0.0"
