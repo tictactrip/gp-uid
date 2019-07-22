@@ -1,0 +1,13 @@
+.editorconfig
+.travis.yml
+*.log
+*.pid
+*.seed
+npm-debug.log*
+logs
+coverage
+build/Release
+node_modules
+jest_0
+LICENSE
+__tests__
