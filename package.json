@@ -1,7 +1,7 @@
 {
   "name": "@tictactrip/gp-uid",
   "version": "0.0.0",
-  "description": "Ground place unique identifier.",
+  "description": "Ground place unique identifier generator.",
   "author": "Dimitri DO BAIRRO <dimitri.dobairro@tictactrip.eu>",
   "main": "dist/index.js",
   "dependencies": {
