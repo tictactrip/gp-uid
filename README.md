@@ -16,7 +16,7 @@ This repository provides a powerful ground place unique identifier generator.
 yarn add @tictactrip/gp-uid
 ```
 
-## How ot use it?
+## How to use it?
 
 ```js
 import { Generator } from "@tictactrip/gp-uid";
