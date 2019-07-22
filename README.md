@@ -16,6 +16,41 @@ This repository provides a powerful ground place unique identifier generator.
 yarn add @tictactrip/gp-uid
 ```
 
+## How ot use it?
+
+```js
+import { Generator } from "@tictactrip/gp-uid";
+
+const generator = new Generator();
+
+const gpuid = generator.gpuid({
+        name: 'Paris, Île-de-France, France',
+        latitude: 49.00443,
+        longitude: 2.51703,
+        country_code: 'fr',
+        type: 'cluster',
+      });
+
+console.log(gpuid);
+```
+
+Output: 
+
+```
+[
+    {
+        id: 'c|FRparis___@u09yc',
+        country_code: 'fr',
+        latitude: 49.00443,
+        longitude: 2.51703,
+        name: 'Paris, Île-de-France, France',
+        type: 'cluster'
+    }
+]
+```
+
+
+
 ## Scripts
 
 Run using yarn run `<script>` command.
