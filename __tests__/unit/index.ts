@@ -1,12 +1,12 @@
 import { Generator } from "../../src";
 
-describe("Ground place unique id", () => {
+describe("Ground place unique id generation", () => {
 
   describe("Default configuration", () => {
     const generator: Generator = new Generator();
 
-    it('Should return Paris GPUID', () => {
-      const gpuid = generator.GPUID({
+    it('Should return Paris gpuid', () => {
+      const gpuid = generator.gpuid({
         name: 'Paris, Île-de-France, France',
         latitude: 49.00443,
         longitude: 2.51703,
@@ -26,8 +26,8 @@ describe("Ground place unique id", () => {
       ]);
     });
 
-    it('Should return Paris GPUID', () => {
-      const gpuid = generator.GPUID({
+    it('Should return Paris gpuid', () => {
+      const gpuid = generator.gpuid({
         name: 'Paris - Gare De Lyon',
         latitude: 48.845784,
         longitude: 2.373606,
@@ -45,7 +45,7 @@ describe("Ground place unique id", () => {
       }]);
     });
 
-    it('Should return array of GPUID', () => {
+    it('Should return array of gpuid', () => {
       const places = [
         {
           name: 'Coimbra, Centro, Portugal',
@@ -212,7 +212,7 @@ describe("Ground place unique id", () => {
         },
       ];
 
-      const gpuids = generator.GPUID(places);
+      const gpuids = generator.gpuid(places);
       expect(gpuids).toEqual([
         {
           name: 'Coimbra, Centro, Portugal',
