@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "dependencies": {
     "ngeohash": "0.6.3",
-    "stopword": "^0.3.2"
+    "stopword": "0.3.3"
   },
   "devDependencies": {
     "@types/jest": "24.0.15",
@@ -26,8 +26,8 @@
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "tslint -t stylish --project 'tsconfig.json'",
     "lint:fix": "tslint --fix -t stylish --project 'tsconfig.json'",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "prepublish": "yarn build"
   }
 }
