@@ -9,7 +9,7 @@
     "stopword": "0.3.3"
   },
   "devDependencies": {
-    "@types/jest": "24.0.15",
+    "@types/jest": "24.0.16",
     "@types/ngeohash": "^0.6.2",
     "@types/node": "10.14.12",
     "jest": "24.8.0",
@@ -21,7 +21,7 @@
     "typescript": "3.5.3"
   },
   "scripts": {
-    "clean": "rm -rf coverage build tmp",
+    "clean": "rm -rf coverage dist tmp",
     "build": "tsc -p tsconfig.release.json",
     "build:watch": "tsc -w -p tsconfig.release.json",
     "lint": "tslint -t stylish --project 'tsconfig.json'",
