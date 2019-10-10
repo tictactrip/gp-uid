@@ -27,7 +27,7 @@ const configuration: IConfiguration = {
     hash_precision: 6,
     name_length: 8,
   },
-  require_field: ['name', 'type', 'latitude', 'longitude', 'country_code'],
+  require_field: ['name', 'type', 'latitude', 'longitude', 'countryCode'],
 };
 
 export {
