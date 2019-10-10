@@ -5,7 +5,7 @@ describe("Ground place unique id generation", () => {
   describe("Default configuration", () => {
     const generator: Generator = new Generator();
 
-    it('Should return Paris gpuid', () => {
+    it('should return Paris gpuid', () => {
       const gpuid = generator.gpuid({
         name: 'Paris, Île-de-France, France',
         latitude: 49.00443,
@@ -14,19 +14,17 @@ describe("Ground place unique id generation", () => {
         type: 'cluster',
       });
 
-      expect(gpuid).toEqual([
-        {
+      expect(gpuid).toEqual({
           country_code: 'fr',
           id: 'c|FRparis___@u09yc',
           latitude: 49.00443,
           longitude: 2.51703,
           name: 'Paris, Île-de-France, France',
           type: 'cluster',
-        },
-      ]);
+        });
     });
 
-    it('Should return Paris gpuid', () => {
+    it('should return Paris gpuid', () => {
       const gpuid = generator.gpuid({
         name: 'Paris - Gare De Lyon',
         latitude: 48.845784,
@@ -35,17 +33,17 @@ describe("Ground place unique id generation", () => {
         type: 'group',
       });
 
-      expect(gpuid).toEqual([{
+      expect(gpuid).toEqual({
         country_code: 'fr',
         id: 'g|FRpargarly@u09tyh',
         latitude: 48.845784,
         longitude: 2.373606,
         name: 'Paris - Gare De Lyon',
         type: 'group',
-      }]);
+      });
     });
 
-    it('Should return array of gpuid', () => {
+    it('should return array of gpuid', () => {
       const places = [
         {
           name: 'Coimbra, Centro, Portugal',

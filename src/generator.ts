@@ -23,7 +23,7 @@ export class Generator {
    * @param data {IPlace | IPlace[]}
    * @return {IPlace[]}
    */
-  public gpuid(data: IPlace | IPlace[]): IPlace[] {
+  public gpuid(data: IPlace | IPlace[]): IPlace[] | IPlace {
     if(!Array.isArray(data)) {
       return this.process([data]);
     }
@@ -156,8 +156,8 @@ export class Generator {
    * @param places {IPlace[]}
    * @return {IPlace[]}
    */
-  private process(places: IPlace[]): IPlace[] {
-    return places.map((place: IPlace) => {
+  private process(places: IPlace[]): IPlace[] | IPlace {
+    const results = places.map((place: IPlace) => {
       let placeTmp = place;
       if(place.id !== undefined) {
         placeTmp = { ancestor_id: place.id, ...place};
@@ -167,6 +167,12 @@ export class Generator {
 
       return placeTmp;
     });
+
+    if(results.length === 1) {
+      return results[0];
+    }
+
+    return results;
   }
 
   /**
