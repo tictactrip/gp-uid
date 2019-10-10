@@ -27,7 +27,7 @@ const gpuid = generator.gpuid({
         name: 'Paris, Île-de-France, France',
         latitude: 49.00443,
         longitude: 2.51703,
-        country_code: 'fr',
+        countryCode: 'fr',
         type: 'cluster',
       });
 
@@ -40,7 +40,7 @@ Output:
 [
     {
         id: 'c|FRparis___@u09yc',
-        country_code: 'fr',
+        countryCode: 'fr',
         latitude: 49.00443,
         longitude: 2.51703,
         name: 'Paris, Île-de-France, France',
