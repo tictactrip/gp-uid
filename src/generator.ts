@@ -217,7 +217,7 @@ export class Generator {
    * @return {string}
    */
   private sanitize(str: string, countryCode:string): string {
-    const latinWord: string = this.replaceChar(str).toLowerCase().replace(/\(|\)|\.|'|\//gi, '').replace(/ +|-|'/gi, ' ');
+    const latinWord: string = this.replaceChar(str).toLowerCase().replace(/\(|\)|\.|"|\//gi, '').replace(/ +|-|'/gi, ' ');
     const cc: string = countryCode.toLowerCase() === 'be' ? 'fr' : countryCode.toLowerCase();
     const stopWords = sw[cc] || sw.en; // tslint:disable-line no-unsafe-any
 
