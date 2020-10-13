@@ -400,5 +400,24 @@ describe('Ground place unique id generation', () => {
         },
       ]);
     });
+
+    it("should return Pont-de-l'Arche expected gpuid", () => {
+      const gpuid = generator.gpuid({
+        name: "Pont-de-l'Arche",
+        latitude: 49.3169,
+        longitude: 1.16,
+        countryCode: 'fr',
+        type: 'group',
+      });
+
+      expect(gpuid).toEqual({
+        countryCode: 'fr',
+        id: 'g|FRpontarch@u0bbd3',
+        latitude: 49.3169,
+        longitude: 1.16,
+        name: "Pont-de-l'Arche",
+        type: 'group',
+      });
+    });
   });
 });
